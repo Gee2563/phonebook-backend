@@ -9,13 +9,15 @@
     "dev": "nodemon index.js",
     "build:ui": "rm -rf build && cd ../front-end && npm run build && cp -r dist ../phonebook-backend",
     "deploy:full": "npm run build:ui && git add . && git commit -m uibuild && git push"
-
   },
   "author": "GS",
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "mongoose": "^8.3.2",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
